@@ -6,7 +6,7 @@ const Read = () => {
   const [error, setError] = useState("");
 
   async function getData() {
-    const response = await fetch("http://localhost:5000");
+    const response = await fetch("https://backend-fsp6.onrender.com/");
     const result = await response.json();
     if (!response.ok) {
       console.log(result.error);
@@ -24,7 +24,7 @@ const Read = () => {
 
   const handelDelete =  async(id)=>{
     // http://localhost:5000" 
-    const response = await fetch(`http://localhost:5000/${id}`,{
+    const response = await fetch(`https://backend-fsp6.onrender.com/${id}`,{
         method:"DELETE",
     })
     const result = await response.json()

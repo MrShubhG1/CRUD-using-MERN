@@ -10,7 +10,7 @@ const Update = () => {
   const navigate = useNavigate()
   //
   const getSingleUser = async () => {
-    const response = await fetch(`http://localhost:5000/${id}`);
+    const response = await fetch(`https://backend-fsp6.onrender.com/${id}`);
     const result = await response.json();
     if (!response.ok) {
       console.log(result.error);
@@ -30,7 +30,7 @@ const Update = () => {
     
             const updateUser = {name,email,age};
             e.preventDefault();
-            const response = await fetch(`http://localhost:5000/${id}` ,{
+            const response = await fetch(`https://backend-fsp6.onrender.com/${id}` ,{
                 method : "PATCH",
                 body:JSON.stringify(updateUser),
                 headers: {

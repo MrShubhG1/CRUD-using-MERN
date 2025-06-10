@@ -12,7 +12,7 @@ const Create = () => {
     const handelSubmit = async (e)=>{
         const addUser = {name,email,age};
         e.preventDefault();
-        const response = await fetch("http://localhost:5000" ,{
+        const response = await fetch("https://backend-fsp6.onrender.com/" ,{
             method : "POST",
             body:JSON.stringify(addUser),
             headers: {
