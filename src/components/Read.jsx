@@ -63,11 +63,12 @@ const Read = () => {
       <div className="row">
         {loading ? (
                  <div
-            className="card col-xl-3 col-md-4 col-sm-6 m-2 shadow-lg"
+            className="col-12 col-sm-6 col-lg-4  me-2 mb-4"
+            
             aria-hidden="true"
           >
-            <div className="card-body">
-              <h5 className="card-title placeholder-glow">
+            <div className="card-body rounded shadow-lg d-flex flex-column justify-content-between  " style={{height:"200px"}}>
+              <h5 className="card-title placeholder-glow pt-3">
                 <span className="placeholder col-6"></span>
               </h5>
               <h6 className="card-subtitle mb-2 text-body-secondary placeholder-glow">
@@ -77,7 +78,7 @@ const Read = () => {
                 <span className="placeholder col-4"></span>
                 <span className="placeholder col-3"></span>
               </p>
-              <div className="d-flex gap-2 mt-2">
+              <div className="d-flex justify-content-end gap-2 pe-4 pb-4 mt-2">
                 <span className="btn btn-primary disabled placeholder col-5"></span>
                 <span className="btn btn-danger disabled placeholder col-5"></span>
               </div>
