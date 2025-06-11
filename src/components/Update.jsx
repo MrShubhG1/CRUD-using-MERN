@@ -56,15 +56,15 @@ const Update = () => {
 
   return (
     <div>
-      <div className="container my-2  col-xl-3">
+      <div className="container my-2  col-11 col-sm-8 col-md-6 col-lg-5 col-xl-4">
         {error && (
           <div class="alert alert-danger" role="alert">
             {error}
           </div>
         )}
-        <h2 className="text-center">Edit the data</h2>
+        <h2 className="text-center">Edit User</h2>
         <form
-          className="row align-items-center justify-content-center mt-4"
+          className="row align-items-center justify-content-center mt-4  shadow-lg rounded px-3 py-4"
           onSubmit={handelUpdate}
         >
           <div className="mb-3">
@@ -96,9 +96,9 @@ const Update = () => {
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
-          <div className="d-flex ">
-            <button type="submit" className="btn btn-primary col-xl-3 ">
-              Submit
+          <div className="d-flex justify-content-end  text-center">
+            <button type="submit" className="btn btn-success px-5">
+              Save
             </button>
           </div>
         </form>
